@@ -1,3 +1,5 @@
+package multi_threading.multithreading_exercises;
+
 //2.Use sleep and join methods with thread.
 
 public class Question2{

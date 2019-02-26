@@ -1,6 +1,9 @@
+package multi_threading.multithreading_exercises;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+//3.Use a singleThreadExecutor to submit multiple threads.
 public class Question3{
 
     public static void main(String[] args) {

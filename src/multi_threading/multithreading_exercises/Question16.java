@@ -1,3 +1,5 @@
+package multi_threading.multithreading_exercises;
+
 //16.Create a deadlock and Resolve it using tryLock().
 
 import java.util.concurrent.locks.Lock;

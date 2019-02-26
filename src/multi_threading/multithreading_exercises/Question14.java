@@ -1,3 +1,5 @@
+package multi_threading.multithreading_exercises;
+
 //14.Coordinate mulitple threads using wait() and notifyAll()
 
 public class Question14{

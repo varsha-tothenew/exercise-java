@@ -1,4 +1,6 @@
-//15.Use Reentract lock for coordinating 2 threads with signal(), signalAll() and wait().
+package multi_threading.multithreading_exercises;
+
+//15.Use Reentract lock for coordinating 2 threads with signal() and wait().
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
