@@ -1,5 +1,5 @@
+package multi_threading.multithreading_exercises;
 //7.Submit List of tasks to ExecutorService and wait for the completion of all the tasks.
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;

@@ -1,3 +1,5 @@
+package multi_threading.multithreading_exercises;
+
 // 1/Create and Run a Thread using Runnable Interface and Thread class.
 
 public class Question1 {

@@ -1,3 +1,4 @@
+package multi_threading.multithreading_exercises;
 //6.Return a Future from ExecutorService by using callable and use get(), isDone(), isCancelled() with the Future object to know the status of task submitted.
 
 import java.util.concurrent.*;
