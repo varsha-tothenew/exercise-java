@@ -1,3 +1,4 @@
+package multi_threading.multithreading_exercises;
 //13.Coordinate 2 threads using wait() and notify().
 
 public class Question13{

@@ -1,3 +1,5 @@
+package multi_threading.multithreading_exercises;
+
 // 10.Use Synchronize method to enable synchronization between multiple threads trying to access method at same time.
 // 11.Use Synchronize block to enable synchronization between multiple threads trying to access method at same time.
 // 12.Use Atomic Classes instead of Synchronize method and blocks.
@@ -12,20 +14,21 @@ public class SynchroniseDemo{
     int count;
     int countsync1;
     int countsync2;
+    //12.use atomic classes
     AtomicInteger countsync3=new AtomicInteger();
     Lock lock = new ReentrantLock(true);
     int countsync4;
 
     public void incrementCount() {
         count++;
-        //synchroised block
+        //11.synchroised block
         synchronized (this){countsync2++;}
         countsync3.incrementAndGet();//++ cannot be applied to atomic integer its a operation only for primitives
         lock.lock();
         countsync4++;
         lock.unlock();
     }
-    //synchronised method
+    //10.synchronised method
     synchronized public void incrementCountsync1(){
         countsync1++;
     }

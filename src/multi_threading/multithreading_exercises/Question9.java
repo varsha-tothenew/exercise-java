@@ -1,3 +1,4 @@
+package multi_threading.multithreading_exercises;
 //9.Increase concurrency with Thread pools using newCachedThreadPool() and newFixedThreadPool().
 
 import java.util.Random;
@@ -27,8 +28,8 @@ class Process implements Runnable{
 public class Question9{
     public static void main(String[] args) {
 
-//        ExecutorService executorService= Executors.newFixedThreadPool(3);
-        ExecutorService executorService= Executors.newCachedThreadPool();
+        ExecutorService executorService= Executors.newFixedThreadPool(3);
+     //   ExecutorService executorService= Executors.newCachedThreadPool();
 
         for (int i = 0; i <= 30; i++) {
             executorService.submit(new Process(i));
