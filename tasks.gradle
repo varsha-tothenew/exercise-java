@@ -1,0 +1,9 @@
+task task1<<{
+    println"task1"
+}
+task task2<<{
+    println"task2"
+}
+task task3{
+    println"task3"
+}

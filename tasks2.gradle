@@ -1,0 +1,41 @@
+
+//we will have to call
+task hello<<{
+    println "hello"
+}
+//called by gradle
+task goodbye{
+    println"bye"
+}
+task greet<<{
+    println "welcome"
+}
+//dependency method1
+task intro(dependsOn:hello)<<{
+    println "in intro"
+}
+//will append after hello(existing task)
+hello<<{
+    println "hello extended"
+}
+//dependency method2
+greet.dependsOn hello,intro
+
+//dependency method3 depends on all starting with lib
+task taskX << {
+    println 'taskX'
+}
+taskX.dependsOn {
+    tasks.findAll {
+        task-> task.name.startsWith('lib')
+    }
+}
+task lib1 << {
+    println 'lib1'
+}
+task lib2 << {
+    println 'lib2'
+}
+task notALib << {
+    println 'notALib'
+}
